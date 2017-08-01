@@ -2,4 +2,4 @@
 
 echo "Building confd..."
 mkdir -p bin
-GOOS=linux GOARCH=amd64 go build -o bin/confd .
+GOOS=linux GOARCH=amd64 go build -v -o bin/confd .
