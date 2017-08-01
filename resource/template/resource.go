@@ -14,8 +14,8 @@ import (
 	"text/template"
 
 	"github.com/BurntSushi/toml"
-	"github.com/kelseyhightower/confd/backends"
-	"github.com/kelseyhightower/confd/log"
+	"github.com/mikarinneoracle/confd/backends"
+	"github.com/mikarinneoracle/confd/log"
 	"github.com/kelseyhightower/memkv"
 )
 

@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 	"time"
-	"github.com/kelseyhightower/confd/log"
+	"github.com/mikarinneoracle/confd/log"
 )
 
 // Client is a wrapper around the redis client
@@ -28,7 +28,7 @@ func tryConnect(machines []string, password string) (redis.Conn, error) {
 			network = "unix"
 		}
 		log.Debug(fmt.Sprintf("Trying to connect to redis node %s", address))
-		
+
 		dialops := []redis.DialOption{
 			redis.DialConnectTimeout(time.Second),
 			redis.DialReadTimeout(time.Second),

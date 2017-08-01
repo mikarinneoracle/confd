@@ -7,9 +7,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/kelseyhightower/confd/backends"
-	"github.com/kelseyhightower/confd/log"
-	"github.com/kelseyhightower/confd/resource/template"
+	"github.com/mikarinneoracle/confd/backends"
+	"github.com/mikarinneoracle/confd/log"
+	"github.com/mikarinneoracle/confd/resource/template"
 )
 
 func main() {
@@ -22,7 +22,7 @@ func main() {
 		log.Fatal(err.Error())
 	}
 
-	log.Info("Starting confd")
+	log.Info("Starting confd 0.3")
 
 	storeClient, err := backends.New(backendsConfig)
 	if err != nil {
